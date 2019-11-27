@@ -104,7 +104,7 @@ func >>> <I, M, O>(f: @escaping (I) -> M, g: @escaping (M) -> O) -> (I) -> O {
 }
 ```
 
-So, we can `myFilter` as:
+So, we can write `myFilter` as:
 
 ``` Swift
 let myFilter = blur(radius: 3) >>> erosion(strength: 3) >>> reduceNoise(level: 0.2)
